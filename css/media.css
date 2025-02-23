@@ -1,0 +1,204 @@
+/* Medium */
+@media (min-width: 768px) { 
+    /* hero */
+    .hero-subtitle{
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+    }
+
+    /* about */
+    .about .about-img img{
+        width: 106px;
+        height: 106px;
+    }
+
+    .about .full-content{
+        padding-inline: 3rem;
+    }
+
+    /* portfolio */
+    .work-content .upper-part{
+        padding: 0 1.5rem 0 .75rem;
+    }
+
+    /* testimonial */
+    .testimonial p{
+        padding: 0 5rem;
+    }
+
+    /* blog */
+    .card-footer .right-part{
+        transform: translateX(165%);
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .bg-transparent{
+        background-color: transparent;
+    }
+
+    /* navbar */
+    .nav-container .navbar ul li:not(.dropdown li){
+        padding: .625rem 0 .625rem 1.875rem;
+    }
+
+    .nav-container .navbar .dropdown li:not(.deepdrop-menu li){
+        padding: .625rem 2.5rem .625rem .625rem !important;
+    }
+
+    .navbar-nav .nav-link{
+        position: relative;
+        color: #ffffff !important;
+    }
+    
+    .navbar-nav .nav-link:not(.dropdown-toggle)::after ,
+    #first-drop::before
+    {
+        content: '';
+        background-color: #ffffff;
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: all 0.5s;
+    }
+
+    #first-drop::before
+    {
+        height: 1.5px;
+        left: 30px;
+        bottom: 3.5px;
+    }
+
+    .navbar-nav .nav-link.active:not(.dropdown-toggle)::after ,
+    .navbar-nav .nav-link:not(.dropdown-toggle):hover::after
+    {
+        width: 80%;
+    }
+
+    #first-drop:hover::before
+    {
+        width: 63%;
+    }
+
+    .navbar{
+        padding-block: .9497rem;
+    }
+
+    .nav-container ul li a:not(.dropdown li a){
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    
+    .navbar-nav .nav-link.active , .nav-container ul li a:hover:not(.dropdown li a) {
+        color: white !important;
+    }
+    
+    .navbar ul:not(.dropdown ul){
+        background-color: transparent !important;
+        padding-block: 0;
+    }
+
+    .nav-container .navbar-nav{
+        box-shadow: none;
+    } 
+
+    .dropdown-toggle::after{
+        right: 0;
+    }
+    
+    .deepdrop::after{
+        right: -20%;
+        transform: translateY(55%);
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu{
+        top: 45px;
+    }
+
+    .navbar-expand-lg .navbar-nav .deepdrop-menu {
+        left: -187px;
+        top: 55px;
+    }
+
+    .navbar .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(15px);
+        transition: all 0.4s;
+    }
+
+    .navbar .deepdrop-menu{
+        transform: translateX(15px);
+    }
+
+    .navbar .dropdown:hover > .dropdown-menu ,
+    .navbar .deepdrop-li:hover > .dropdown-menu
+    {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+        transform: translateX(0);
+    }
+    /* about */
+    .about .about-img img{
+        width: 150px;
+        height: 150px;
+    }
+
+    /* hero */
+    .hero h2{
+        font-size: 4.5rem;
+        line-height: 5.375rem;
+    }
+
+    /* counter */
+    .counter{
+        background-attachment: fixed;
+    }
+
+    /* testimonial */
+    .testimonial p{
+        padding: 0 8rem;
+    }
+
+    /* blog */
+    .card-footer .right-part{
+        transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    /* hero - testimonial  - contact */
+    .hero , .testimonial , .contact{
+        background-attachment: fixed;
+    }
+}
+
+/* X-Large */
+@media (min-width: 1200px) { 
+    /* testimonial */
+    .testimonial p{
+        padding: 0 13rem;
+    }
+}
+
+@media (min-width: 1366px){
+    /* nav */
+    .navbar-expand-lg .navbar-nav .deepdrop-menu {
+        left: 0;
+    }
+
+    .navbar .deepdrop-menu{
+        transform: translateX(165px);
+    }
+
+    .navbar .deepdrop-li:hover > .dropdown-menu
+    {
+        transform: translateX(180px);
+    }
+}

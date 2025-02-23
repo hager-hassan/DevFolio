@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevFolio</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/counter.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/testimonial.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    
+    <!-- nav -->
+    <div class="nav-container bg-semi-transparent-black fixed-top" id="navbar">
+        <div class="container px-0">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid ">
+                    <h1><a class="navbar-brand text-white fw-semibold" href="#"> DevFolio </a></h1>
+                    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="text-white fw-semibold">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white bg-transparent" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link p-0 active fw-semibold" aria-current="page" href="#hero"> HOME </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 fw-semibold" href="#about"> ABOUT </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 fw-semibold" href="#services"> SERVICES </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 fw-semibold" href="#portfolio"> WORK </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link p-0 fw-semibold" href="#blog"> BLOG </a>
+                            </li>
+                            <li class="nav-item dropdown" id="first-drop">
+                                <a class="nav-link p-0 dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+                                    DROP DOWN
+                                </a>
+                                <ul class="dropdown-menu border border-0 rounded-0">
+                                    <li><a class="dropdown-item fw-semibold p-lg-0" href="#">Drop Down 1</a></li>
+                                    <li class="dropdown-submenu deepdrop-li px-lg-0">
+                                        <a class="dropdown-item dropdown-toggle deepdrop fw-semibold p-lg-0" href="#">Deep Drop Down</a>
+                                        <ul class="dropdown-menu deepdrop-menu border border-0 rounded-0">
+                                            <li class="pb-lg-3 ps-lg-0"><a class="dropdown-item fw-semibold py-lg-0" href="#">Deep Drop Down 1</a></li>
+                                            <li class="pt-lg-0 pb-lg-3 ps-lg-0"><a class="dropdown-item fw-semibold py-lg-0" href="#">Deep Drop Down 2</a></li>
+                                            <li class="pt-lg-0 pb-lg-3 ps-lg-0"><a class="dropdown-item fw-semibold py-lg-0" href="#">Deep Drop Down 3</a></li>
+                                            <li class="pt-lg-0 pb-lg-3 ps-lg-0"><a class="dropdown-item fw-semibold py-lg-0" href="#">Deep Drop Down 4</a></li>
+                                            <li class="pt-lg-0 ps-lg-0"><a class="dropdown-item fw-semibold py-lg-0" href="#">Deep Drop Down 5</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="dropdown-item fw-semibold p-lg-0" href="#">Drop Down 2</a></li>
+                                    <li><a class="dropdown-item fw-semibold p-lg-0" href="#">Drop Down 3</a></li>
+                                    <li><a class="dropdown-item fw-semibold p-lg-0" href="#">Drop Down 4</a></li>
+                                </ul>
+                            </li>         
+                            <li class="nav-item">
+                                <a class="nav-link p-0 fw-semibold" href="#contact"> CONTACT </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- hero -->
+    <header class="text-white text-center hero d-flex align-items-center" id="hero">
+        <div class="container">
+            <div class="header-content">
+                <h2 class="fw-semibold mb-4 h1">I am Morgan Freeman</h2>
+            </div>
+            <div>
+                <p class="hero-subtitle fw-semibold">
+                    <span class="typed"></span>
+                </p>                
+            </div>
+        </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+
+    <!-- about -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="full-content bg-white">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-5">
+                                            <div class="about-img">
+                                                <img src=".\\images\\testimonial-2.jpg" class="rounded">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-6 col-md-7">
+                                            <div class="information">
+                                                <div class="name">
+                                                    <p>
+                                                        <span class="fw-semibold">Name:</span> Morgan Freeman
+                                                    </p>
+                                                </div>
+                                                <div class="profile">
+                                                    <p>
+                                                        <span class="fw-semibold">Profile:</span> full stack developer
+                                                    </p>
+                                                </div>
+                                                <div class="email">
+                                                    <p>
+                                                        <span class="fw-semibold">Email:</span> contact@example.com
+                                                    </p>
+                                                </div>
+                                                <div class="phone">
+                                                    <p>
+                                                        <span class="fw-semibold">Phone:</span> (617) 557-0089
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="skills">
+                                                <div>
+                                                    <h3 class="mb-3 fw-semibold">
+                                                        Skill
+                                                    </h3>
+                                                </div>
+                                                <div class="progress-section">
+                                                    <div class="html">
+                                                        <span class="text-uppercase">html 85%</span>
+                                                        <div class="progress mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar w-85"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="css">
+                                                        <span class="text-uppercase">css3 75%</span>
+                                                        <div class="progress mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar w-75"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="php">
+                                                        <span class="text-uppercase">php 50%</span>
+                                                        <div class="progress mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar w-50"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="js">
+                                                        <span class="text-uppercase">javascript 90%</span>
+                                                        <div class="progress mt-2" role="progressbar" aria-label="Basic example" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                                            <div class="progress-bar w-90"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="about-me pt-4 pt-md-0">
+                                    <header class="mb-5">
+                                        <h2>About me</h2>
+                                    </header>
+                                    <p class="mb-3 fw-light">
+                                        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, 
+                                        accumsan id imperdiet et, porttitor at sem. 
+                                        Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. 
+                                        Nulla porttitor accumsan tincidunt.
+                                    </p>
+                                    <p class="mb-3 fw-light">
+                                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor 
+                                        eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum 
+                                        sed sit amet dui. porttitor at sem.
+                                    </p>
+                                    <p class="mb-3 fw-light">
+                                        Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, 
+                                        elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet 
+                                        elit, eget tincidunt nibh pulvinar a.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section class="services pt-5 text-center" id="services">
+        <div class="container">
+            <header class="title text-center">
+                <h2 class="text-uppercase fw-bold">
+                    services
+                </h2>
+                <p class="subtitle mb-3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="line bg-primary"></div>
+            </header>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="inner mb-5 service-box bg-white rounded-4">
+                        <div class="service-icon mb-3 d-flex align-items-center justify-content-center rounded-circle m-auto">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                                    <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3 class="text-uppercase mb-2">
+                                web design
+                            </h3>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Magni adipisci eaque 
+                                autem fugiat! Quia, provident vitae! 
+                                Magni tempora perferendis eum non provident.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner mb-5 service-box bg-white rounded-4">
+                        <div class="service-icon mb-3 d-flex align-items-center justify-content-center rounded-circle m-auto">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                                    <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                                    <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3 class="text-uppercase mb-2">
+                                web development
+                            </h3>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Magni adipisci eaque 
+                                autem fugiat! Quia, provident vitae! 
+                                Magni tempora perferendis eum non provident.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner mb-5 service-box bg-white rounded-4">
+                        <div class="service-icon mb-3 d-flex align-items-center justify-content-center rounded-circle m-auto">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                                    <path d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"/>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3 class="text-uppercase mb-2">
+                                photography
+                            </h3>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Magni adipisci eaque 
+                                autem fugiat! Quia, provident vitae! 
+                                Magni tempora perferendis eum non provident.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner mb-5 service-box bg-white rounded-4">
+                        <div class="service-icon mb-3 d-flex align-items-center justify-content-center rounded-circle m-auto">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-binoculars" viewBox="0 0 16 16">
+                                    <path d="M3 2.5A1.5 1.5 0 0 1 4.5 1h1A1.5 1.5 0 0 1 7 2.5V5h2V2.5A1.5 1.5 0 0 1 10.5 1h1A1.5 1.5 0 0 1 13 2.5v2.382a.5.5 0 0 0 .276.447l.895.447A1.5 1.5 0 0 1 15 7.118V14.5a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 14.5v-3a.5.5 0 0 1 .146-.354l.854-.853V9.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v.793l.854.853A.5.5 0 0 1 7 11.5v3A1.5 1.5 0 0 1 5.5 16h-3A1.5 1.5 0 0 1 1 14.5V7.118a1.5 1.5 0 0 1 .83-1.342l.894-.447A.5.5 0 0 0 3 4.882zM4.5 2a.5.5 0 0 0-.5.5V3h2v-.5a.5.5 0 0 0-.5-.5zM6 4H4v.882a1.5 1.5 0 0 1-.83 1.342l-.894.447A.5.5 0 0 0 2 7.118V13h4v-1.293l-.854-.853A.5.5 0 0 1 5 10.5v-1A1.5 1.5 0 0 1 6.5 8h3A1.5 1.5 0 0 1 11 9.5v1a.5.5 0 0 1-.146.354l-.854.853V13h4V7.118a.5.5 0 0 0-.276-.447l-.895-.447A1.5 1.5 0 0 1 12 4.882V4h-2v1.5a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5zm4-1h2v-.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5zm4 11h-4v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-8 0H2v.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5z"/>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3 class="text-uppercase mb-2">
+                                responsive design
+                            </h3>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Magni adipisci eaque 
+                                autem fugiat! Quia, provident vitae! 
+                                Magni tempora perferendis eum non provident.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner mb-5 service-box bg-white rounded-4">
+                        <div class="service-icon mb-3 d-flex align-items-center justify-content-center rounded-circle m-auto">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-brightness-high" viewBox="0 0 16 16">
+                                    <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3 class="text-uppercase mb-2">
+                                graphic design
+                            </h3>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Magni adipisci eaque 
+                                autem fugiat! Quia, provident vitae! 
+                                Magni tempora perferendis eum non provident.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner mb-5 service-box bg-white rounded-4">
+                        <div class="service-icon mb-3 d-flex align-items-center justify-content-center rounded-circle m-auto">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-calendar4-week" viewBox="0 0 16 16">
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                                    <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                            </span>
+                        </div>
+
+                        <div class="service-content">
+                            <h3 class="text-uppercase mb-2">
+                                marketing services
+                            </h3>
+                            
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur 
+                                adipisicing elit. Magni adipisci eaque 
+                                autem fugiat! Quia, provident vitae! 
+                                Magni tempora perferendis eum non provident.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- counter -->
+    <section class="counter text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <div class="inner counter-box pt-4">
+                        <div class="counter-icon mb-3 rounded-circle m-auto">
+                            <span class="circle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-check mt-2" viewBox="0 0 16 16">
+                                    <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="fw-normal mb-0" data-count="450"> 0 </h3>
+                            <span class="text-uppercase">works completed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="inner counter-box pt-4">
+                        <div class="counter-icon mb-3 rounded-circle m-auto">
+                            <span class="circle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-journal-richtext mt-2" viewBox="0 0 16 16">
+                                    <path d="M7.5 3.75a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m-.861 1.542 1.33.886 1.854-1.855a.25.25 0 0 1 .289-.047L11 4.75V7a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 7v-.5s1.54-1.274 1.639-1.208M5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2"/>
+                                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1z"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="fw-normal mb-0"  data-count="25"> 0 </h3>
+                            <span class="text-uppercase">years of experience</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="inner counter-box pt-4">
+                        <div class="counter-icon mb-3 rounded-circle m-auto">
+                            <span class="circle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-people mt-2" viewBox="0 0 16 16">
+                                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="fw-normal mb-0"  data-count="550"> 0 </h3>
+                            <span class="text-uppercase">total clients</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="inner counter-box pt-4">
+                        <div class="counter-icon mb-3 rounded-circle m-auto">
+                            <span class="circle-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-award mt-2" viewBox="0 0 16 16">
+                                    <path d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z"/>
+                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="counter-content">
+                            <h3 class="fw-normal mb-0"  data-count="48"> 0 </h3>
+                            <span class="text-uppercase">award won</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="portfolio pt-5" id="portfolio">
+        <div class="container">
+            <header class="title text-center">
+                <h2 class="text-uppercase fw-bold">
+                    portfolio
+                </h2>
+                <p class="subtitle mb-3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="line bg-primary"></div>
+            </header>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="inner work bg-white mb-5">
+                        <div class="work-image overflow-hidden">
+                            <img src="./images/work-1.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="work-content d-flex justify-content-between align-items-center">
+                            <div class="upper-part">
+                                <h3 class="mb-2">
+                                    Lorem impsum dolor
+                                </h3>
+                                <p class="date">
+                                    <span>Web Design</span> / 18 Sep. 2018
+                                </p>
+                            </div>
+                            <div class="work-icon ms-auto flex-shrink-0 bottom-part">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner work bg-white mb-5">
+                        <div class="work-image overflow-hidden">
+                            <img src="./images/work-2.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="work-content d-flex justify-content-between align-items-center">
+                            <div class="upper-part">
+                                <h3 class="mb-2">
+                                    Loreda Cuno Nere
+                                </h3>
+                                <p class="date">
+                                    <span>Web Design</span> / 18 Sep. 2018
+                                </p>
+                            </div>
+                            <div class="work-icon ms-auto flex-shrink-0 bottom-part">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner work bg-white mb-5">
+                        <div class="work-image overflow-hidden">
+                            <img src="./images/work-3.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="work-content d-flex justify-content-between align-items-center">
+                            <div class="upper-part">
+                                <h3 class="mb-2">
+                                    Mavrito Lana Dere
+                                </h3>
+                                <p class="date">
+                                    <span>Web Design</span> / 18 Sep. 2018
+                                </p>
+                            </div>
+                            <div class="work-icon ms-auto flex-shrink-0 bottom-part">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner work bg-white mb-5">
+                        <div class="work-image overflow-hidden">
+                            <img src="./images/work-4.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="work-content d-flex justify-content-between align-items-center">
+                            <div class="upper-part">
+                                <h3 class="mb-2">
+                                    Bindo Laro Cado
+                                </h3>
+                                <p class="date">
+                                    <span>Web Design</span> / 18 Sep. 2018
+                                </p>
+                            </div>
+                            <div class="work-icon ms-auto flex-shrink-0 bottom-part">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner work bg-white mb-5">
+                        <div class="work-image overflow-hidden">
+                            <img src="./images/work-5.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="work-content d-flex justify-content-between align-items-center">
+                            <div class="upper-part">
+                                <h3 class="mb-2">
+                                    Studio Lena Mado
+                                </h3>
+                                <p class="date">
+                                    <span>Web Design</span> / 18 Sep. 2018
+                                </p>
+                            </div>
+                            <div class="work-icon ms-auto flex-shrink-0 bottom-part">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner work bg-white mb-5">
+                        <div class="work-image overflow-hidden">
+                            <img src="./images/work-6.jpg" alt="" class="w-100">
+                        </div>
+                        <div class="work-content d-flex justify-content-between align-items-center">
+                            <div class="upper-part">
+                                <h3 class="mb-2">
+                                    Studio Big Bang
+                                </h3>
+                                <p class="date">
+                                    <span>Web Design</span> / 18 Sep. 2018
+                                </p>
+                            </div>
+                            <div class="work-icon ms-auto flex-shrink-0 bottom-part">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial -->
+    <section class="testimonial text-white">
+        <div class="container">
+        <div class="owl-carousel owl-theme text-center">
+            <div class="item item-1">
+                <div class="testimonial-image m-auto mt-3">
+                    <img src=".\\images\\testimonial-2.jpg" class="rounded-circle">
+                </div>
+                <h3 class="text-uppercase my-3 fw-semibold">
+                    xavi alonso
+                </h3>
+                <p class="mb-3 fw-light">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                </p>
+            </div>
+
+            <div class="item item-2">
+                <div class="testimonial-image m-auto mt-3">
+                    <img src=".\\images\\testimonial-4.jpeg" class="rounded-circle">
+                </div>
+                <h3 class="text-uppercase my-3 fw-semibold">
+                    marta socrate
+                </h3>
+                <p class="mb-3 fw-light">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <header class="title text-center">
+                <h2 class="text-uppercase fw-bold">
+                    blog
+                </h2>
+                <p class="subtitle mb-3">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="line bg-primary"></div>
+            </header>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="inner">
+                        <div class="card rounded-bottom-2 blog-card mb-md-5">
+                            <img src=".\\images\\post-1.jpg" class="card-img-top blog-image" alt="...">
+                            <div class="card-body position-relative">
+                                <h5 class="card-title"> <a href="#">See more ideas about Travel</a> </h5>
+                                <p class="card-text mb-3">
+                                    Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. 
+                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                </p>
+                                <span class="text-uppercase card-badge text-white fw-medium position-absolute rounded-1 top-0 start-50">
+                                    travel
+                                </span>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center flex-md-wrap">
+                                <div class="left-part d-flex align-items-center">
+                                    <img src=".\\images\\testimonial-2.jpg" class="me-2 rounded-circle">
+                                    <span>Morgan Freeman</span>
+                                </div>
+
+                                <div class="right-part d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock me-1" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                                    </svg>
+                                    <span>10 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner">
+                        <div class="card rounded-bottom-2 blog-card mb-md-5">
+                            <img src=".\\images\\post-2.jpg" class="card-img-top blog-image" alt="...">
+                            <div class="card-body position-relative">
+                                <h5 class="card-title"> <a href="#">See more ideas about Travel</a> </h5>
+                                <p class="card-text mb-3">
+                                    Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. 
+                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                </p>
+                                <span class="text-uppercase card-badge text-white fw-medium position-absolute rounded-1 top-0 start-50">
+                                    web design
+                                </span>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center flex-md-wrap">
+                                <div class="left-part d-flex align-items-center">
+                                    <img src=".\\images\\testimonial-2.jpg" class="me-2 rounded-circle">
+                                    <span>Morgan Freeman</span>
+                                </div>
+
+                                <div class="right-part d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock me-1" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                                    </svg>
+                                    <span>10 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="inner">
+                        <div class="card rounded-bottom-2 blog-card mb-md-5">
+                            <img src=".\\images\\post-3.jpg" class="card-img-top blog-image" alt="...">
+                            <div class="card-body position-relative">
+                                <h5 class="card-title"> <a href="#">See more ideas about Travel</a> </h5>
+                                <p class="card-text mb-3">
+                                    Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. 
+                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                                </p>
+                                <span class="text-uppercase card-badge text-white fw-medium position-absolute rounded-1 top-0 start-50">
+                                    web design
+                                </span>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between align-items-center flex-md-wrap">
+                                <div class="left-part d-flex align-items-center">
+                                    <img src=".\\images\\testimonial-2.jpg" class="me-2 rounded-circle">
+                                    <span>Morgan Freeman</span>
+                                </div>
+
+                                <div class="right-part d-flex align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock me-1" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                                    </svg>
+                                    <span>10 min</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="inner py-5 bg-white mb-5 px-md-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="inner">
+                                    <header class="mb-5">
+                                        <h2>Send Message Us</h2>
+                                    </header>
+        
+                                    <form>
+                                        <div class="row gap-3">
+                                            <div>
+                                                <input type="text" placeholder="Your Name" required class="name form-control rounded-0">
+                                            </div>
+                                            <div>
+                                                <input type="email" placeholder="Your Email" required class="email form-control rounded-0">
+                                            </div>
+                                            <div>
+                                                <input type="text" placeholder="Subject" required class="subject form-control rounded-0">
+                                            </div>
+                                            <div>
+                                                <textarea placeholder="Message" class="message form-control rounded-0" required></textarea>
+                                            </div>
+                                            <div class="m-auto button-container pt-3">
+                                                <button type="submit" class="rounded-pill text-white border-0">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6">
+                                <div class="inner">
+                                    <header class="mb-5 pt-4 pt-md-0">
+                                        <h2>Get in Touch</h2>
+                                    </header>
+    
+                                    <div>
+                                        <p class="fw-light">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                            Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. 
+                                            Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione 
+                                            nobis mollitia inventore?
+                                        </p>
+    
+                                        <div class="info d-flex flex-column gap-2">
+                                            <div class="location d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt text-primary" viewBox="0 0 16 16">
+                                                    <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                                                    <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                                </svg>
+                                                <span>
+                                                    329 WASHINGTON ST BOSTON, MA 02108
+                                                </span>
+                                            </div>
+                                            <div class="phone d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone text-primary" viewBox="0 0 16 16">
+                                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                                                    <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                                                </svg>
+                                                <span>
+                                                    (617) 557-0089
+                                                </span>
+                                            </div>
+                                            <div class="mail d-flex align-items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope text-primary" viewBox="0 0 16 16">
+                                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                                </svg>
+                                                <span>
+                                                    contact@example.com
+                                                </span>
+                                            </div>
+                                        </div>
+    
+                                        <div class="socials py-4 d-flex gap-3">
+                                            <div class="social rounded-circle d-flex justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="19.2" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                                </svg>
+                                            </div>
+                                            <div class="social rounded-circle d-flex justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="19.2" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                                </svg>
+                                            </div>
+                                            <div class="social rounded-circle d-flex justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="19.2" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+                                                </svg>
+                                            </div>
+                                            <div class="social rounded-circle d-flex justify-content-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="19.2" height="19.2" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+    </main>
+
+    <!-- footer -->
+    <footer class="footer text-center text-white">
+        <div class="container">
+            <div class="upper-part">
+                <p class="copyright">
+                    © Copyright <span class="fw-bold">DevFolio</span>. All Rights Reserved
+                </p>
+            </div>
+
+            <div class="bottom-part">
+                <p class="m-0">
+                    Designed by BootstrapMade
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- scroll top button -->
+    <button id="scrollTop" class="p-0 d-flex align-items-center justify-content-center">
+        <i class="bi bi-arrow-up-short"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

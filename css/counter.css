@@ -1,0 +1,19 @@
+/* counter */
+
+.counter{
+    padding-block: 8rem;
+    background-image: linear-gradient(rgba(0, 119, 255, 0.7) , rgba(0, 119, 255, 0.7)) , url('..\\images\\counters-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.counter h3{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.counter .counter-icon{
+    width: 3.75rem;
+    height: 3.75rem;
+    box-shadow: rgb(205, 225, 248) 0px 0px 0px 10px;
+}

@@ -1,0 +1,47 @@
+/* about */
+
+.about{
+    padding-top: 4rem;
+}
+
+.about .full-content{
+    padding: 4rem 1.25rem;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-img img{
+    margin-left: .625rem;
+}
+
+.about-img{
+    margin-bottom: 2rem;
+}
+
+.about .information p{
+    color: rgb(78, 78, 78);
+}
+
+.about .information span , .about .skills h3{
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    color: rgb(30, 30, 30);
+}
+
+.progress, .progress-stacked{
+    --bs-progress-border-radius: 0;
+    height: 11.2px;
+}
+
+.progress{
+    background-color: #cde2f7;
+    margin-bottom: 1.2rem;
+}
+
+.progress-section span , .about .about-me p{
+    color: rgb(78, 78, 78);
+}
+
+.about .about-me p{
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}

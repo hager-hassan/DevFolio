@@ -1,0 +1,103 @@
+:root{
+    --main-color: #0078ff;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+.bg-semi-transparent-black{
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+h2{
+    font-size: 3rem;
+    line-height: 3.625rem;
+    color: rgb(30, 30, 30);
+}
+
+.subtitle{
+    color: #4e4e4e;
+}
+
+.line{
+    width: 2.5rem;
+    height: 5px;
+    margin: auto;
+}
+
+.title{
+    margin-bottom: 4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.w-85{
+    width: 85%;
+}
+
+.w-90{
+    width: 90%;
+}
+
+.contact h2 , .about .about-me h2{
+    font-size: 2rem;
+    line-height: 2.375rem;
+    position: relative;
+}
+
+.contact h2::after , .about .about-me h2::after{
+    content: '';
+    background-color: var(--main-color);
+    width: 6.25rem;
+    height: .1875rem;
+    position: absolute;
+    bottom: -0.625rem;
+    left: 0;
+}
+/*******************************/
+/* footer */
+
+.footer{
+    padding: 1.5625rem 0;
+    background-color: #0062d3;
+}
+
+.footer .copyright{
+    margin-bottom: .3125rem;
+}
+/*******************************/
+/* scroll button */
+
+#scrollTop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99999;
+    border: 0;
+    background-color: #0078ff;
+    opacity: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.4s ;
+}
+
+#scrollTop.show {
+    opacity: 1;
+}
+
+#scrollTop i {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#scrollTop:hover{
+    background-color: #298EFF;
+}
